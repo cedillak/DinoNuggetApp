@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'IntroPages/NewPet.dart';
 import 'onboarding_screen.dart';
-import 'newgame.dart';
-import 'homepage.dart';
+import 'home_page.dart';
 import 'closet.dart';
 import 'minigames.dart';
 import 'history.dart';
@@ -25,15 +25,19 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => SplashScreen(),
-        '/OnBoardingScreen': (context) => OnBoardingScreen(),
-        '/newgame': (context) => NewPet(),
+        '/': (context) => const SplashScreen(),
+        //'/': (context) => ClosetPage(),
+        //'/': (context) => HistoryPage(birthDate: DateTime.now(),),
+        //'/': (context) => MiniGamesPage(),
+        '/OnBoardingScreen': (context) => const OnBoardingScreen(),
+        '/newgame': (context) => const NewPet(),
         '/homepage': (context) => HomePage(
               petName: 'Dino',
               birthDate: DateTime.now(),
             ),
         '/closet': (context) => ClosetPage(),
-        '/minigames': (context) => MinigamesPage(),
+        '/minigames': (context) =>
+            MiniGamesPage(), // Ensure this matches the class name
         '/history': (context) => HistoryPage(
               birthDate: DateTime.now(),
             ),
