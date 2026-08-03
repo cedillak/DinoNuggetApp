@@ -36,6 +36,9 @@ To run the Dino Nugget app locally:
 ## Screenshots
 ![Dino Nugget Screenshot](link-to-screenshot)
 
+## Demo
+[Demo](https://youtu.be/1r1n3Li-JZU?is=H6jP0sYkKPhfpeiZ)
+
 ## Future Enhancements
 - 🏆 Add more mini-games for variety.
 - 📱 Improve customization options with more accessories and skins.
